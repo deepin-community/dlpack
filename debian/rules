@@ -1,4 +1,7 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@
+	dh $@ -Scmake
+
+override_dh_auto_configure:
+	dh_auto_configure -Scmake -- -DCMAKE_POLICY_VERSION_MINIMUM=3.10
