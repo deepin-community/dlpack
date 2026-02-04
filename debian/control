@@ -1,15 +1,29 @@
-Source: template-repository
-Section: unknown
+Source: dlpack
+Section: science
+Homepage: https://github.com/dmlc/dlpack
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Standards-Version: 4.6.2
+Vcs-Git: https://salsa.debian.org/deeplearning-team/dlpack.git
+Vcs-Browser: https://salsa.debian.org/deeplearning-team/dlpack
+Maintainer: Debian Deep Learning Team <debian-science-maintainers@lists.alioth.debian.org>
+Uploaders: Mo Zhou <lumin@debian.org>
+Build-Depends: cmake, debhelper-compat (= 13)
+Rules-Requires-Root: no
 
-Package: template-repository
+Package: libdlpack-dev
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: ${misc:Depends}
+Multi-Arch: same
+Description: Open In Memory Tensor Structure
+ DLPack is an open in-memory tensor structure to for sharing tensor among
+ frameworks. DLPack enables
+ .
+  * Easier sharing of operators between deep learning frameworks.
+  * Easier wrapping of vendor level operator implementations, allowing
+    collaboration when introducing new devices/ops.
+  * Quick swapping of backend implementations, like different version of BLAS
+  * For final users, this could bring more operators, and possibility of mixing
+    usage between frameworks.
+ .
+ DLPack do not intend to implement of Tensor and Ops, but instead use this as
+ common bridge to reuse tensor and ops across frameworks.

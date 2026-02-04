@@ -1,5 +1,40 @@
-template-repository (1.0-1) unstable; urgency=medium
+dlpack (1.0-2) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * Bump CMake policy version (Closes: #1112850)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Timo Röhling <roehling@debian.org>  Sat, 27 Sep 2025 22:14:17 +0200
+
+dlpack (1.0-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Repository-Browse.
+  * Update standards version to 4.6.2, no changes needed.
+  * Apply multi-arch hints. + libdlpack-dev: Add Multi-Arch: same.
+
+  [ Mo Zhou ]
+  * New upstream version 1.0
+  * Update watch file.
+
+ -- Mo Zhou <lumin@debian.org>  Sun, 13 Oct 2024 17:30:19 -0400
+
+dlpack (0.6-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update watch file for real releases
+
+ -- Wookey <wookey@debian.org>  Thu, 20 Jan 2022 04:55:20 +0000
+
+dlpack (0.0~git20200217.3ec0443-2) unstable; urgency=medium
+
+  * Bump debhelper compat level to 13.
+  * Apply wrap-and-sort.
+  * Upload to unstable.
+
+ -- Mo Zhou <lumin@debian.org>  Sun, 14 Jun 2020 21:01:35 +0800
+
+dlpack (0.0~git20200217.3ec0443-1) experimental; urgency=medium
+
+  * Initial release. (Closes: #951205)
+
+ -- Mo Zhou <lumin@debian.org>  Sun, 19 Apr 2020 19:14:13 +0800
